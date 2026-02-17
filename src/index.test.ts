@@ -294,8 +294,8 @@ describe('generated category data files', () => {
 	] as const
 
 	for (const [name, slugs] of categoryFiles) {
-		test(`${name}.json exists and has correct count`, () => {
-			const filePath = join(categoriesDir, `${name}.json`)
+		test(`${name}/slugs.json exists and has correct count`, () => {
+			const filePath = join(categoriesDir, name, 'slugs.json')
 			expect(existsSync(filePath)).toBe(true)
 			const data = JSON.parse(readFileSync(filePath, 'utf-8'))
 			expect(data.length).toBe(slugs.length)

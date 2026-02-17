@@ -157,16 +157,17 @@ Every slug in the list is also available in six static data formats, committed t
 
 ### Per-category data files
 
-Each category is also available in all six formats under `data/categories/`:
+Each category has its own subfolder under `data/categories/` with all six formats:
 
 ```
-data/categories/auth.json
-data/categories/country-codes.json
-data/categories/ecommerce.json
+data/categories/auth/slugs.json
+data/categories/auth/slugs.txt
+data/categories/country-codes/slugs.json
+data/categories/ecommerce/slugs.json
 ...
 ```
 
-Category filenames: `api-developer`, `app-routes`, `auth`, `country-codes`, `dns-mail`, `ecommerce`, `health-monitoring`, `impersonation`, `infrastructure`, `languages`, `legal`, `protocol-tech`, `saas`, `seo-marketing`, `social`.
+Category folders: `api-developer`, `app-routes`, `auth`, `country-codes`, `dns-mail`, `ecommerce`, `health-monitoring`, `impersonation`, `infrastructure`, `languages`, `legal`, `protocol-tech`, `saas`, `seo-marketing`, `social`.
 
 ### Fetch from GitHub (raw)
 
@@ -178,7 +179,7 @@ curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/s
 curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.txt
 
 # Single category (e.g. auth)
-curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/categories/auth.json
+curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/categories/auth/slugs.json
 ```
 
 ### Fetch from CDN (npm package)
@@ -188,11 +189,11 @@ Since the `data/` directory is included in the npm package, you can also fetch t
 ```bash
 # jsDelivr
 curl -sL https://cdn.jsdelivr.net/npm/reserved-slugs/data/slugs.json
-curl -sL https://cdn.jsdelivr.net/npm/reserved-slugs/data/categories/auth.json
+curl -sL https://cdn.jsdelivr.net/npm/reserved-slugs/data/categories/auth/slugs.json
 
 # unpkg
 curl -sL https://unpkg.com/reserved-slugs/data/slugs.json
-curl -sL https://unpkg.com/reserved-slugs/data/categories/auth.json
+curl -sL https://unpkg.com/reserved-slugs/data/categories/auth/slugs.json
 ```
 
 ## Why use this?

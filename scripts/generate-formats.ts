@@ -88,7 +88,9 @@ const categoryEntries: [string, readonly string[]][] = [
 
 let categoryTotal = 0
 for (const [name, slugs] of categoryEntries) {
-	writeFormats(categoriesDir, name, slugs)
+	const categoryDir = join(categoriesDir, name)
+	mkdirSync(categoryDir, { recursive: true })
+	writeFormats(categoryDir, 'slugs', slugs)
 	categoryTotal += slugs.length
 }
 
