@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="reserved-slugs" width="100%" />
+  <img src="https://raw.githubusercontent.com/miketromba/reserved-slugs/main/assets/banner.png" alt="reserved-slugs" width="100%" />
 </p>
 
 <p align="center">
