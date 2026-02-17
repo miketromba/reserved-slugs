@@ -6,7 +6,7 @@ import { isReservedSlug, reservedSlugs, reservedSlugsArray } from './index'
 describe('reservedSlugs', () => {
 	test('is a Set with the expected size', () => {
 		expect(reservedSlugs).toBeInstanceOf(Set)
-		expect(reservedSlugs.size).toBe(904)
+		expect(reservedSlugs.size).toBe(1053)
 	})
 
 	test('contains known reserved slugs', () => {
@@ -69,14 +69,14 @@ describe('generated data files', () => {
 		expect(existsSync(filePath)).toBe(true)
 		const data = JSON.parse(readFileSync(filePath, 'utf-8'))
 		expect(Array.isArray(data)).toBe(true)
-		expect(data.length).toBe(904)
+		expect(data.length).toBe(1053)
 	})
 
 	test('slugs.txt exists and has correct count', () => {
 		const filePath = join(dataDir, 'slugs.txt')
 		expect(existsSync(filePath)).toBe(true)
 		const lines = readFileSync(filePath, 'utf-8').trim().split('\n')
-		expect(lines.length).toBe(904)
+		expect(lines.length).toBe(1053)
 	})
 
 	test('slugs.csv exists and has correct count (header + data)', () => {
@@ -84,7 +84,7 @@ describe('generated data files', () => {
 		expect(existsSync(filePath)).toBe(true)
 		const lines = readFileSync(filePath, 'utf-8').trim().split('\n')
 		expect(lines[0]).toBe('slug')
-		expect(lines.length).toBe(905) // header + 904 entries
+		expect(lines.length).toBe(1054) // header + 1053 entries
 	})
 
 	test('slugs.yml exists and has correct count', () => {
@@ -93,7 +93,7 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/^ {2}- /gm)
 		expect(entries).not.toBeNull()
-		expect(entries?.length).toBe(904)
+		expect(entries?.length).toBe(1053)
 	})
 
 	test('slugs.xml exists and has correct count', () => {
@@ -102,7 +102,7 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/<slug>/g)
 		expect(entries).not.toBeNull()
-		expect(entries?.length).toBe(904)
+		expect(entries?.length).toBe(1053)
 	})
 
 	test('slugs.toml exists and has correct count', () => {
@@ -111,6 +111,6 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/^ {2}"/gm)
 		expect(entries).not.toBeNull()
-		expect(entries?.length).toBe(904)
+		expect(entries?.length).toBe(1053)
 	})
 })

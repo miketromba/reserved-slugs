@@ -1,7 +1,7 @@
 {
 	"name": "reserved-slugs",
 	"version": "1.0.0",
-	"description": "A comprehensive list of 900+ reserved slugs and usernames to prevent URL collisions in web applications",
+	"description": "A comprehensive list of 1,000+ reserved slugs and usernames to prevent URL collisions in web applications",
 	"license": "MIT",
 	"author": "miketromba",
 	"repository": {

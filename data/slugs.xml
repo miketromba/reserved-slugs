@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <slugs>
   <slug>0</slug>
+  <slug>2fa</slug>
   <slug>about</slug>
+  <slug>abuse</slug>
   <slug>ac</slug>
   <slug>access</slug>
   <slug>account</slug>
@@ -31,10 +33,13 @@
   <slug>all</slug>
   <slug>alpha</slug>
   <slug>am</slug>
+  <slug>ambassador</slug>
   <slug>an</slug>
   <slug>analysis</slug>
   <slug>analytics</slug>
   <slug>android</slug>
+  <slug>announcement</slug>
+  <slug>announcements</slug>
   <slug>anon</slug>
   <slug>anonymous</slug>
   <slug>ao</slug>
@@ -51,11 +56,15 @@
   <slug>as</slug>
   <slug>asct</slug>
   <slug>asset</slug>
+  <slug>assets</slug>
   <slug>at</slug>
   <slug>atom</slug>
   <slug>au</slug>
   <slug>auth</slug>
   <slug>authentication</slug>
+  <slug>authorize</slug>
+  <slug>automation</slug>
+  <slug>automations</slug>
   <slug>avatar</slug>
   <slug>aw</slug>
   <slug>awadhi</slug>
@@ -92,9 +101,13 @@
   <slug>bot</slug>
   <slug>bots</slug>
   <slug>br</slug>
+  <slug>brand</slug>
+  <slug>branding</slug>
   <slug>bs</slug>
   <slug>bt</slug>
   <slug>bug</slug>
+  <slug>bundle</slug>
+  <slug>bundles</slug>
   <slug>burmese</slug>
   <slug>business</slug>
   <slug>bv</slug>
@@ -112,11 +125,17 @@
   <slug>career</slug>
   <slug>careers</slug>
   <slug>cart</slug>
+  <slug>case-studies</slug>
+  <slug>case-study</slug>
   <slug>categories</slug>
   <slug>category</slug>
   <slug>cc</slug>
+  <slug>ccpa</slug>
   <slug>cd</slug>
+  <slug>cdn</slug>
+  <slug>ceo</slug>
   <slug>cf</slug>
+  <slug>cfo</slug>
   <slug>cg</slug>
   <slug>cgi</slug>
   <slug>cgi-bin</slug>
@@ -130,6 +149,7 @@
   <slug>ci</slug>
   <slug>ck</slug>
   <slug>cl</slug>
+  <slug>cli</slug>
   <slug>client</slug>
   <slug>cliente</slug>
   <slug>clients</slug>
@@ -145,20 +165,30 @@
   <slug>community</slug>
   <slug>company</slug>
   <slug>compare</slug>
+  <slug>compliance</slug>
   <slug>compras</slug>
   <slug>config</slug>
   <slug>configuration</slug>
+  <slug>confirm</slug>
   <slug>connect</slug>
+  <slug>consent</slug>
+  <slug>console</slug>
   <slug>contact</slug>
   <slug>contact-us</slug>
   <slug>contactus</slug>
   <slug>contest</slug>
   <slug>contribute</slug>
+  <slug>coo</slug>
+  <slug>copyright</slug>
   <slug>corp</slug>
+  <slug>coupon</slug>
+  <slug>coupons</slug>
   <slug>cr</slug>
   <slug>create</slug>
+  <slug>cron</slug>
   <slug>cs</slug>
   <slug>css</slug>
+  <slug>cto</slug>
   <slug>cu</slug>
   <slug>cv</slug>
   <slug>cvs</slug>
@@ -170,6 +200,7 @@
   <slug>db</slug>
   <slug>dd</slug>
   <slug>de</slug>
+  <slug>debug</slug>
   <slug>default</slug>
   <slug>delete</slug>
   <slug>demo</slug>
@@ -188,17 +219,23 @@
   <slug>dir</slug>
   <slug>direct</slug>
   <slug>directory</slug>
+  <slug>discount</slug>
+  <slug>dispute</slug>
   <slug>dist</slug>
   <slug>dj</slug>
   <slug>dk</slug>
   <slug>dm</slug>
+  <slug>dmca</slug>
   <slug>do</slug>
   <slug>doc</slug>
   <slug>docs</slug>
   <slug>documentation</slug>
   <slug>domain</slug>
+  <slug>downgrade</slug>
   <slug>download</slug>
   <slug>downloads</slug>
+  <slug>draft</slug>
+  <slug>drafts</slug>
   <slug>dutch</slug>
   <slug>dz</slug>
   <slug>ec</slug>
@@ -212,9 +249,13 @@
   <slug>eg</slug>
   <slug>eh</slug>
   <slug>email</slug>
+  <slug>embed</slug>
+  <slug>employee</slug>
+  <slug>employees</slug>
   <slug>employment</slug>
   <slug>empty</slug>
   <slug>end</slug>
+  <slug>engineering</slug>
   <slug>english</slug>
   <slug>enterprise</slug>
   <slug>entries</slug>
@@ -234,6 +275,7 @@
   <slug>facebook</slug>
   <slug>faq</slug>
   <slug>farsi</slug>
+  <slug>favicon</slug>
   <slug>favorite</slug>
   <slug>favorites</slug>
   <slug>feature</slug>
@@ -244,6 +286,7 @@
   <slug>fi</slug>
   <slug>file</slug>
   <slug>files</slug>
+  <slug>finance</slug>
   <slug>first</slug>
   <slug>fj</slug>
   <slug>fk</slug>
@@ -273,8 +316,10 @@
   <slug>game</slug>
   <slug>games</slug>
   <slug>gan</slug>
+  <slug>gateway</slug>
   <slug>gb</slug>
   <slug>gd</slug>
+  <slug>gdpr</slug>
   <slug>ge</slug>
   <slug>german</slug>
   <slug>get</slug>
@@ -296,18 +341,26 @@
   <slug>gq</slug>
   <slug>gr</slug>
   <slug>graph</slug>
+  <slug>graphql</slug>
   <slug>group</slug>
   <slug>groups</slug>
+  <slug>grpc</slug>
   <slug>gs</slug>
   <slug>gt</slug>
   <slug>gu</slug>
   <slug>guest</slug>
   <slug>guests</slug>
+  <slug>guidelines</slug>
   <slug>gujarati</slug>
   <slug>gw</slug>
   <slug>gy</slug>
   <slug>hakka</slug>
+  <slug>hashtag</slug>
   <slug>hausa</slug>
+  <slug>health</slug>
+  <slug>health-check</slug>
+  <slug>healthcheck</slug>
+  <slug>heartbeat</slug>
   <slug>help</slug>
   <slug>hindi</slug>
   <slug>hk</slug>
@@ -328,6 +381,7 @@
   <slug>httpd</slug>
   <slug>https</slug>
   <slug>hu</slug>
+  <slug>humans</slug>
   <slug>i</slug>
   <slug>iamges</slug>
   <slug>icon</slug>
@@ -343,15 +397,21 @@
   <slug>imap</slug>
   <slug>img</slug>
   <slug>in</slug>
+  <slug>inbox</slug>
   <slug>index</slug>
   <slug>indice</slug>
   <slug>info</slug>
   <slug>information</slug>
   <slug>inquiry</slug>
   <slug>instagram</slug>
+  <slug>integration</slug>
+  <slug>integrations</slug>
+  <slug>internal</slug>
   <slug>intranet</slug>
   <slug>invitations</slug>
   <slug>invite</slug>
+  <slug>invoice</slug>
+  <slug>invoices</slug>
   <slug>io</slug>
   <slug>ipad</slug>
   <slug>iphone</slug>
@@ -404,11 +464,14 @@
   <slug>legal</slug>
   <slug>li</slug>
   <slug>license</slug>
+  <slug>like</slug>
+  <slug>likes</slug>
   <slug>link</slug>
   <slug>links</slug>
   <slug>linux</slug>
   <slug>list</slug>
   <slug>lists</slug>
+  <slug>liveness</slug>
   <slug>lk</slug>
   <slug>local</slug>
   <slug>localhost</slug>
@@ -440,11 +503,13 @@
   <slug>malayalam</slug>
   <slug>manager</slug>
   <slug>mandarin</slug>
+  <slug>manifest</slug>
   <slug>manual</slug>
   <slug>map</slug>
   <slug>maps</slug>
   <slug>marathi</slug>
   <slug>marketing</slug>
+  <slug>marketplace</slug>
   <slug>master</slug>
   <slug>mc</slug>
   <slug>md</slug>
@@ -452,9 +517,13 @@
   <slug>media</slug>
   <slug>member</slug>
   <slug>members</slug>
+  <slug>mention</slug>
+  <slug>mentions</slug>
   <slug>message</slug>
   <slug>messages</slug>
   <slug>messenger</slug>
+  <slug>metrics</slug>
+  <slug>mfa</slug>
   <slug>mg</slug>
   <slug>mh</slug>
   <slug>microblog</slug>
@@ -470,6 +539,8 @@
   <slug>mob</slug>
   <slug>mobile</slug>
   <slug>mobilemail</slug>
+  <slug>mod</slug>
+  <slug>moderator</slug>
   <slug>movie</slug>
   <slug>movies</slug>
   <slug>mp</slug>
@@ -531,19 +602,26 @@
   <slug>null</slug>
   <slug>nz</slug>
   <slug>oauth</slug>
+  <slug>oembed</slug>
   <slug>offer</slug>
   <slug>offers</slug>
   <slug>official</slug>
   <slug>old</slug>
   <slug>om</slug>
+  <slug>onboarding</slug>
   <slug>online</slug>
+  <slug>openapi</slug>
   <slug>openid</slug>
   <slug>operator</slug>
+  <slug>ops</slug>
   <slug>order</slug>
   <slug>orders</slug>
+  <slug>org</slug>
   <slug>organization</slug>
   <slug>organizations</slug>
+  <slug>orgs</slug>
   <slug>oriya</slug>
+  <slug>outbox</slug>
   <slug>overview</slug>
   <slug>owner</slug>
   <slug>owners</slug>
@@ -553,6 +631,8 @@
   <slug>pages</slug>
   <slug>panel</slug>
   <slug>panjabi</slug>
+  <slug>partner</slug>
+  <slug>partners</slug>
   <slug>password</slug>
   <slug>payment</slug>
   <slug>pda</slug>
@@ -576,12 +656,15 @@
   <slug>pl</slug>
   <slug>plan</slug>
   <slug>plans</slug>
+  <slug>playground</slug>
   <slug>plugin</slug>
   <slug>plugins</slug>
   <slug>pm</slug>
   <slug>pn</slug>
   <slug>policy</slug>
   <slug>polish</slug>
+  <slug>poll</slug>
+  <slug>polls</slug>
   <slug>pop</slug>
   <slug>pop3</slug>
   <slug>popular</slug>
@@ -592,6 +675,7 @@
   <slug>postmaster</slug>
   <slug>posts</slug>
   <slug>pr</slug>
+  <slug>preferences</slug>
   <slug>premium</slug>
   <slug>press</slug>
   <slug>price</slug>
@@ -606,6 +690,7 @@
   <slug>project</slug>
   <slug>projects</slug>
   <slug>promo</slug>
+  <slug>proxy</slug>
   <slug>ps</slug>
   <slug>pt</slug>
   <slug>pub</slug>
@@ -617,14 +702,24 @@
   <slug>python</slug>
   <slug>qa</slug>
   <slug>query</slug>
+  <slug>queue</slug>
   <slug>random</slug>
   <slug>ranking</slug>
   <slug>re</slug>
+  <slug>reaction</slug>
+  <slug>reactions</slug>
   <slug>read</slug>
+  <slug>readiness</slug>
   <slug>readme</slug>
+  <slug>receipt</slug>
+  <slug>receipts</slug>
   <slug>recent</slug>
+  <slug>recovery</slug>
   <slug>recruit</slug>
   <slug>recruitment</slug>
+  <slug>redoc</slug>
+  <slug>refund</slug>
+  <slug>refunds</slug>
   <slug>register</slug>
   <slug>registration</slug>
   <slug>release</slug>
@@ -639,7 +734,13 @@
   <slug>request</slug>
   <slug>requests</slug>
   <slug>reset</slug>
+  <slug>rest</slug>
+  <slug>return</slug>
+  <slug>returns</slug>
+  <slug>revoke</slug>
   <slug>ro</slug>
+  <slug>roadmap</slug>
+  <slug>robots</slug>
   <slug>roc</slug>
   <slug>romanian</slug>
   <slug>root</slug>
@@ -654,8 +755,10 @@
   <slug>sag</slug>
   <slug>sale</slug>
   <slug>sales</slug>
+  <slug>saml</slug>
   <slug>sample</slug>
   <slug>samples</slug>
+  <slug>sandbox</slug>
   <slug>save</slug>
   <slug>sb</slug>
   <slug>sc</slug>
@@ -663,12 +766,14 @@
   <slug>script</slug>
   <slug>scripts</slug>
   <slug>sd</slug>
+  <slug>sdk</slug>
   <slug>se</slug>
   <slug>search</slug>
   <slug>secure</slug>
   <slug>security</slug>
   <slug>self</slug>
   <slug>send</slug>
+  <slug>sent</slug>
   <slug>serbo-croatian</slug>
   <slug>server</slug>
   <slug>server-info</slug>
@@ -684,10 +789,12 @@
   <slug>sg</slug>
   <slug>sh</slug>
   <slug>share</slug>
+  <slug>shipping</slug>
   <slug>shop</slug>
   <slug>show</slug>
   <slug>si</slug>
   <slug>sign-in</slug>
+  <slug>sign-out</slug>
   <slug>sign-up</slug>
   <slug>signin</slug>
   <slug>signout</slug>
@@ -706,6 +813,7 @@
   <slug>so</slug>
   <slug>soporte</slug>
   <slug>source</slug>
+  <slug>spam</slug>
   <slug>spanish</slug>
   <slug>spec</slug>
   <slug>special</slug>
@@ -718,6 +826,7 @@
   <slug>ssladmin</slug>
   <slug>ssladministrator</slug>
   <slug>sslwebmaster</slug>
+  <slug>sso</slug>
   <slug>st</slug>
   <slug>staff</slug>
   <slug>stage</slug>
@@ -738,12 +847,16 @@
   <slug>su</slug>
   <slug>subdomain</slug>
   <slug>subscribe</slug>
+  <slug>subscription</slug>
   <slug>subscriptions</slug>
   <slug>sunda</slug>
   <slug>suporte</slug>
   <slug>support</slug>
+  <slug>survey</slug>
+  <slug>surveys</slug>
   <slug>sv</slug>
   <slug>svn</slug>
+  <slug>swagger</slug>
   <slug>swf</slug>
   <slug>sy</slug>
   <slug>sys</slug>
@@ -754,6 +867,7 @@
   <slug>tablet</slug>
   <slug>tablets</slug>
   <slug>tag</slug>
+  <slug>takedown</slug>
   <slug>talk</slug>
   <slug>tamil</slug>
   <slug>task</slug>
@@ -765,6 +879,8 @@
   <slug>tech</slug>
   <slug>telnet</slug>
   <slug>telugu</slug>
+  <slug>template</slug>
+  <slug>templates</slug>
   <slug>term</slug>
   <slug>terms</slug>
   <slug>terms-of-service</slug>
@@ -774,6 +890,7 @@
   <slug>test2</slug>
   <slug>test3</slug>
   <slug>teste</slug>
+  <slug>testimonials</slug>
   <slug>testing</slug>
   <slug>tests</slug>
   <slug>tf</slug>
@@ -792,18 +909,27 @@
   <slug>tn</slug>
   <slug>to</slug>
   <slug>todo</slug>
+  <slug>token</slug>
+  <slug>tokens</slug>
   <slug>tool</slug>
   <slug>tools</slug>
   <slug>top</slug>
   <slug>topic</slug>
   <slug>topics</slug>
   <slug>tos</slug>
+  <slug>totp</slug>
   <slug>tour</slug>
   <slug>tp</slug>
   <slug>tr</slug>
+  <slug>trace</slug>
+  <slug>tracking</slug>
+  <slug>trademark</slug>
   <slug>transfers</slug>
   <slug>translations</slug>
+  <slug>trash</slug>
+  <slug>trending</slug>
   <slug>trends</slug>
+  <slug>trial</slug>
   <slug>tt</slug>
   <slug>turkish</slug>
   <slug>tutorial</slug>
@@ -820,9 +946,12 @@
   <slug>undef</slug>
   <slug>unfollow</slug>
   <slug>unsubscribe</slug>
+  <slug>unverified</slug>
   <slug>update</slug>
+  <slug>upgrade</slug>
   <slug>upload</slug>
   <slug>uploads</slug>
+  <slug>uptime</slug>
   <slug>urdu</slug>
   <slug>url</slug>
   <slug>us</slug>
@@ -833,11 +962,17 @@
   <slug>usuario</slug>
   <slug>uy</slug>
   <slug>uz</slug>
+  <slug>v1</slug>
+  <slug>v2</slug>
+  <slug>v3</slug>
+  <slug>v4</slug>
   <slug>va</slug>
   <slug>vc</slug>
   <slug>ve</slug>
   <slug>vendas</slug>
   <slug>ver</slug>
+  <slug>verified</slug>
+  <slug>verify</slug>
   <slug>version</slug>
   <slug>vg</slug>
   <slug>vi</slug>
@@ -846,28 +981,42 @@
   <slug>vietnamese</slug>
   <slug>visitor</slug>
   <slug>vn</slug>
+  <slug>vote</slug>
+  <slug>votes</slug>
+  <slug>vp</slug>
   <slug>vu</slug>
   <slug>watch</slug>
   <slug>weather</slug>
   <slug>web</slug>
   <slug>webhook</slug>
   <slug>webhooks</slug>
+  <slug>webinar</slug>
+  <slug>webinars</slug>
   <slug>webmail</slug>
   <slug>webmaster</slug>
   <slug>website</slug>
   <slug>websites</slug>
+  <slug>websocket</slug>
   <slug>webstats</slug>
   <slug>welcome</slug>
   <slug>wf</slug>
+  <slug>whats-new</slug>
   <slug>widget</slug>
   <slug>widgets</slug>
   <slug>wiki</slug>
   <slug>win</slug>
   <slug>windows</slug>
+  <slug>wishlist</slug>
   <slug>word</slug>
   <slug>work</slug>
+  <slug>worker</slug>
+  <slug>workers</slug>
+  <slug>workflow</slug>
+  <slug>workflows</slug>
   <slug>works</slug>
   <slug>workshop</slug>
+  <slug>workspace</slug>
+  <slug>workspaces</slug>
   <slug>ws</slug>
   <slug>wu</slug>
   <slug>ww</slug>
