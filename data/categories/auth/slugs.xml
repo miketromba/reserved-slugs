@@ -8,22 +8,31 @@
   <slug>auth</slug>
   <slug>authentication</slug>
   <slug>authorize</slug>
+  <slug>biometric</slug>
   <slug>captcha</slug>
   <slug>confirm</slug>
+  <slug>credentials</slug>
   <slug>forgot</slug>
   <slug>log-in</slug>
   <slug>log-out</slug>
   <slug>login</slug>
   <slug>logout</slug>
+  <slug>magic-link</slug>
   <slug>mfa</slug>
   <slug>oauth</slug>
   <slug>openid</slug>
+  <slug>passkey</slug>
+  <slug>passkeys</slug>
   <slug>password</slug>
+  <slug>permission</slug>
+  <slug>permissions</slug>
   <slug>recovery</slug>
   <slug>register</slug>
   <slug>registration</slug>
   <slug>reset</slug>
   <slug>revoke</slug>
+  <slug>role</slug>
+  <slug>roles</slug>
   <slug>saml</slug>
   <slug>secure</slug>
   <slug>security</slug>

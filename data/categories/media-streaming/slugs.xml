@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>audio</slug>
+  <slug>broadcast</slug>
+  <slug>broadcasts</slug>
+  <slug>channel</slug>
+  <slug>channels</slug>
+  <slug>clip</slug>
+  <slug>clips</slug>
+  <slug>episode</slug>
+  <slug>episodes</slug>
+  <slug>gallery</slug>
+  <slug>live</slug>
+  <slug>livestream</slug>
+  <slug>on-demand</slug>
+  <slug>play</slug>
+  <slug>player</slug>
+  <slug>playlist</slug>
+  <slug>playlists</slug>
+  <slug>podcast</slug>
+  <slug>podcasts</slug>
+  <slug>radio</slug>
+  <slug>record</slug>
+  <slug>recording</slug>
+  <slug>recordings</slug>
+  <slug>replay</slug>
+  <slug>season</slug>
+  <slug>seasons</slug>
+  <slug>series</slug>
+  <slug>show</slug>
+  <slug>shows</slug>
+  <slug>stream</slug>
+  <slug>streaming</slug>
+  <slug>tv</slug>
+  <slug>vod</slug>
+  <slug>watch-later</slug>
+</slugs>

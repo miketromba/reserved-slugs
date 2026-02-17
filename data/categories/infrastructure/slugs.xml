@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <slugs>
-  <slug>asct</slug>
   <slug>backup</slug>
   <slug>balancer-manager</slug>
   <slug>bin</slug>
@@ -8,26 +7,35 @@
   <slug>cdn</slug>
   <slug>cgi</slug>
   <slug>cgi-bin</slug>
+  <slug>cluster</slug>
   <slug>config</slug>
   <slug>configuration</slug>
+  <slug>container</slug>
+  <slug>containers</slug>
   <slug>cron</slug>
   <slug>cvs</slug>
   <slug>db</slug>
   <slug>default</slug>
+  <slug>deploy</slug>
+  <slug>deployment</slug>
   <slug>dir</slug>
   <slug>dist</slug>
+  <slug>docker</slug>
   <slug>domain</slug>
+  <slug>environment</slug>
+  <slug>environments</slug>
   <slug>favicon</slug>
   <slug>ftp</slug>
   <slug>gateway</slug>
   <slug>host</slug>
   <slug>hosting</slug>
   <slug>hostname</slug>
-  <slug>hpg</slug>
   <slug>httpd</slug>
   <slug>humans</slug>
   <slug>internal</slug>
   <slug>intranet</slug>
+  <slug>k8s</slug>
+  <slug>kubernetes</slug>
   <slug>ldap-status</slug>
   <slug>local</slug>
   <slug>localhost</slug>
@@ -35,7 +43,6 @@
   <slug>maintenance</slug>
   <slug>manifest</slug>
   <slug>master</slug>
-  <slug>mis</slug>
   <slug>mysql</slug>
   <slug>net</slug>
   <slug>network</slug>
@@ -45,6 +52,8 @@
   <slug>phpredisadmin</slug>
   <slug>proxy</slug>
   <slug>queue</slug>
+  <slug>redis</slug>
+  <slug>registry</slug>
   <slug>robots</slug>
   <slug>root</slug>
   <slug>script</slug>
@@ -76,5 +85,4 @@
   <slug>webstats</slug>
   <slug>worker</slug>
   <slug>workers</slug>
-  <slug>xpg</slug>
 </slugs>

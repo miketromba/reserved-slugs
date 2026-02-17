@@ -11,19 +11,29 @@
   <slug>cfo</slug>
   <slug>coo</slug>
   <slug>cto</slug>
+  <slug>director</slug>
   <slug>employee</slug>
   <slug>employees</slug>
+  <slug>exec</slug>
+  <slug>executive</slug>
   <slug>founder</slug>
   <slug>guest</slug>
   <slug>guests</slug>
+  <slug>intern</slug>
+  <slug>leadership</slug>
   <slug>manager</slug>
   <slug>mod</slug>
   <slug>moderator</slug>
+  <slug>official</slug>
   <slug>operator</slug>
   <slug>owner</slug>
   <slug>owners</slug>
   <slug>partner</slug>
   <slug>partners</slug>
+  <slug>president</slug>
+  <slug>representative</slug>
   <slug>staff</slug>
+  <slug>supervisor</slug>
+  <slug>verified</slug>
   <slug>vp</slug>
 </slugs>

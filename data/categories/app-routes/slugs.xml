@@ -20,7 +20,6 @@
   <slug>asset</slug>
   <slug>assets</slug>
   <slug>beta</slug>
-  <slug>better</slug>
   <slug>book</slug>
   <slug>cadastro</slug>
   <slug>calendar</slug>
@@ -48,7 +47,6 @@
   <slug>diary</slug>
   <slug>dict</slug>
   <slug>dictionary</slug>
-  <slug>die</slug>
   <slug>direct</slug>
   <slug>directory</slug>
   <slug>download</slug>
@@ -88,7 +86,6 @@
   <slug>home</slug>
   <slug>homepage</slug>
   <slug>i</slug>
-  <slug>iamges</slug>
   <slug>icon</slug>
   <slug>icons</slug>
   <slug>idea</slug>
@@ -105,7 +102,6 @@
   <slug>item</slug>
   <slug>items</slug>
   <slug>join</slug>
-  <slug>jump</slug>
   <slug>language</slug>
   <slug>languages</slug>
   <slug>last</slug>
@@ -119,7 +115,6 @@
   <slug>maps</slug>
   <slug>media</slug>
   <slug>mine</slug>
-  <slug>mob</slug>
   <slug>mobile</slug>
   <slug>movie</slug>
   <slug>movies</slug>
@@ -168,9 +163,7 @@
   <slug>req</slug>
   <slug>request</slug>
   <slug>requests</slug>
-  <slug>roc</slug>
   <slug>rule</slug>
-  <slug>sag</slug>
   <slug>sample</slug>
   <slug>samples</slug>
   <slug>save</slug>
@@ -233,12 +226,9 @@
   <slug>websites</slug>
   <slug>widget</slug>
   <slug>widgets</slug>
-  <slug>win</slug>
-  <slug>word</slug>
   <slug>work</slug>
   <slug>works</slug>
   <slug>xxx</slug>
-  <slug>year</slug>
   <slug>you</slug>
   <slug>yourdomain</slug>
   <slug>yourname</slug>

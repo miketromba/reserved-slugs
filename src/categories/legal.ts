@@ -5,13 +5,22 @@
  * and trust & safety workflows.
  */
 export const legalSlugs = [
+	'a11y',
 	'abuse',
+	'acceptable-use',
+	'accessibility',
+	'aup',
 	'ccpa',
 	'compliance',
 	'consent',
+	'cookie',
+	'cookie-policy',
+	'cookies',
 	'copyright',
 	'dispute',
 	'dmca',
+	'dpa',
+	'eula',
 	'gdpr',
 	'legal',
 	'license',

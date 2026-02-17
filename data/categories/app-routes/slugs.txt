@@ -18,7 +18,6 @@ archives
 asset
 assets
 beta
-better
 book
 cadastro
 calendar
@@ -46,7 +45,6 @@ diagram
 diary
 dict
 dictionary
-die
 direct
 directory
 download
@@ -86,7 +84,6 @@ ghost
 home
 homepage
 i
-iamges
 icon
 icons
 idea
@@ -103,7 +100,6 @@ issues
 item
 items
 join
-jump
 language
 languages
 last
@@ -117,7 +113,6 @@ map
 maps
 media
 mine
-mob
 mobile
 movie
 movies
@@ -166,9 +161,7 @@ reports
 req
 request
 requests
-roc
 rule
-sag
 sample
 samples
 save
@@ -231,12 +224,9 @@ website
 websites
 widget
 widgets
-win
-word
 work
 works
 xxx
-year
 you
 yourdomain
 yourname

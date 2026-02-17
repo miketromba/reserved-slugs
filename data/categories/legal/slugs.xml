@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <slugs>
+  <slug>a11y</slug>
   <slug>abuse</slug>
+  <slug>acceptable-use</slug>
+  <slug>accessibility</slug>
+  <slug>aup</slug>
   <slug>ccpa</slug>
   <slug>compliance</slug>
   <slug>consent</slug>
+  <slug>cookie</slug>
+  <slug>cookie-policy</slug>
+  <slug>cookies</slug>
   <slug>copyright</slug>
   <slug>dispute</slug>
   <slug>dmca</slug>
+  <slug>dpa</slug>
+  <slug>eula</slug>
   <slug>gdpr</slug>
   <slug>legal</slug>
   <slug>license</slug>

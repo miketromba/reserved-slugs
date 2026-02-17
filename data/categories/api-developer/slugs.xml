@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <slugs>
   <slug>api</slug>
+  <slug>api-key</slug>
+  <slug>api-keys</slug>
   <slug>bug</slug>
+  <slug>cd</slug>
+  <slug>ci</slug>
   <slug>cli</slug>
   <slug>code</slug>
   <slug>codereview</slug>
@@ -13,23 +17,31 @@
   <slug>doc</slug>
   <slug>docs</slug>
   <slug>documentation</slug>
+  <slug>endpoint</slug>
+  <slug>endpoints</slug>
   <slug>gist</slug>
   <slug>git</slug>
   <slug>github</slug>
   <slug>graph</slug>
   <slug>graphql</slug>
   <slug>grpc</slug>
+  <slug>lint</slug>
   <slug>oembed</slug>
   <slug>openapi</slug>
+  <slug>pipeline</slug>
+  <slug>pipelines</slug>
   <slug>playground</slug>
   <slug>readme</slug>
   <slug>redoc</slug>
   <slug>release</slug>
+  <slug>releases</slug>
   <slug>repo</slug>
   <slug>repositories</slug>
   <slug>repository</slug>
   <slug>rest</slug>
   <slug>sandbox</slug>
+  <slug>schema</slug>
+  <slug>schemas</slug>
   <slug>sdk</slug>
   <slug>spec</slug>
   <slug>swagger</slug>

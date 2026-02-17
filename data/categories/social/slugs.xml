@@ -16,7 +16,6 @@
   <slug>feed</slug>
   <slug>feedback</slug>
   <slug>feeds</slug>
-  <slug>flog</slug>
   <slug>follow</slug>
   <slug>followers</slug>
   <slug>following</slug>
@@ -42,8 +41,6 @@
   <slug>microblog</slug>
   <slug>microblogs</slug>
   <slug>msg</slug>
-  <slug>msn</slug>
-  <slug>nick</slug>
   <slug>nickname</slug>
   <slug>outbox</slug>
   <slug>poll</slug>
@@ -66,7 +63,6 @@
   <slug>trending</slug>
   <slug>trends</slug>
   <slug>twitter</slug>
-  <slug>twittr</slug>
   <slug>unfollow</slug>
   <slug>unsubscribe</slug>
   <slug>vote</slug>

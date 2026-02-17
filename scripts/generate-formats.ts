@@ -1,22 +1,27 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
+	aiMlSlugs,
 	apiDeveloperSlugs,
 	appRouteSlugs,
 	authSlugs,
 	countryCodeSlugs,
 	dnsMailSlugs,
 	ecommerceSlugs,
+	financialSlugs,
 	healthMonitoringSlugs,
 	impersonationSlugs,
 	infrastructureSlugs,
 	languageSlugs,
 	legalSlugs,
+	mediaStreamingSlugs,
+	profanitySlugs,
 	protocolTechSlugs,
 	reservedSlugsArray,
 	saasSlugs,
 	seoMarketingSlugs,
-	socialSlugs
+	socialSlugs,
+	wellKnownPathsSlugs
 } from '../src/index'
 
 const dataDir = join(import.meta.dir, '..', 'data')
@@ -69,21 +74,26 @@ writeFormats(dataDir, 'slugs', reservedSlugsArray)
 // ── Generate per-category files ───────────────────────────────────────
 
 const categoryEntries: [string, readonly string[]][] = [
+	['ai-ml', aiMlSlugs],
 	['api-developer', apiDeveloperSlugs],
 	['app-routes', appRouteSlugs],
 	['auth', authSlugs],
 	['country-codes', countryCodeSlugs],
 	['dns-mail', dnsMailSlugs],
 	['ecommerce', ecommerceSlugs],
+	['financial', financialSlugs],
 	['health-monitoring', healthMonitoringSlugs],
 	['impersonation', impersonationSlugs],
 	['infrastructure', infrastructureSlugs],
 	['languages', languageSlugs],
 	['legal', legalSlugs],
+	['media-streaming', mediaStreamingSlugs],
+	['profanity', profanitySlugs],
 	['protocol-tech', protocolTechSlugs],
 	['saas', saasSlugs],
 	['seo-marketing', seoMarketingSlugs],
-	['social', socialSlugs]
+	['social', socialSlugs],
+	['well-known-paths', wellKnownPathsSlugs]
 ]
 
 let categoryTotal = 0

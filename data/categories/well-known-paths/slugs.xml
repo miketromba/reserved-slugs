@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>admin-ajax</slug>
+  <slug>adminer</slug>
+  <slug>apple-app-site-association</slug>
+  <slug>assetlinks</slug>
+  <slug>cpanel</slug>
+  <slug>crossdomain</slug>
+  <slug>drupal</slug>
+  <slug>elmah</slug>
+  <slug>env</slug>
+  <slug>filemanager</slug>
+  <slug>installer</slug>
+  <slug>joomla</slug>
+  <slug>magento</slug>
+  <slug>manager</slug>
+  <slug>myadmin</slug>
+  <slug>phpinfo</slug>
+  <slug>plesk</slug>
+  <slug>setup-config</slug>
+  <slug>sql</slug>
+  <slug>webmin</slug>
+  <slug>well-known</slug>
+  <slug>wordpress</slug>
+  <slug>wp</slug>
+  <slug>wp-admin</slug>
+  <slug>wp-content</slug>
+  <slug>wp-includes</slug>
+  <slug>wp-json</slug>
+  <slug>wp-login</slug>
+  <slug>xmlrpc</slug>
+</slugs>

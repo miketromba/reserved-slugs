@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>agent</slug>
+  <slug>agents</slug>
+  <slug>ai</slug>
+  <slug>assistant</slug>
+  <slug>assistants</slug>
+  <slug>autocomplete</slug>
+  <slug>chatbot</slug>
+  <slug>chatbots</slug>
+  <slug>classify</slug>
+  <slug>completion</slug>
+  <slug>completions</slug>
+  <slug>copilot</slug>
+  <slug>dataset</slug>
+  <slug>datasets</slug>
+  <slug>embed</slug>
+  <slug>embedding</slug>
+  <slug>embeddings</slug>
+  <slug>fine-tune</slug>
+  <slug>generate</slug>
+  <slug>gpt</slug>
+  <slug>inference</slug>
+  <slug>llm</slug>
+  <slug>ml</slug>
+  <slug>model</slug>
+  <slug>models</slug>
+  <slug>neural</slug>
+  <slug>predict</slug>
+  <slug>prediction</slug>
+  <slug>predictions</slug>
+  <slug>prompt</slug>
+  <slug>prompts</slug>
+  <slug>summarize</slug>
+  <slug>train</slug>
+  <slug>training</slug>
+</slugs>

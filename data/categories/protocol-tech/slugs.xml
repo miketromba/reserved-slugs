@@ -19,7 +19,6 @@
   <slug>linux</slug>
   <slug>mac</slug>
   <slug>mp3</slug>
-  <slug>pda</slug>
   <slug>perl</slug>
   <slug>php</slug>
   <slug>python</slug>
@@ -27,16 +26,12 @@
   <slug>ruby</slug>
   <slug>smartphone</slug>
   <slug>sql</slug>
-  <slug>swf</slug>
   <slug>tablet</slug>
   <slug>tablets</slug>
-  <slug>tux</slug>
   <slug>websocket</slug>
   <slug>windows</slug>
-  <slug>xfn</slug>
   <slug>xml</slug>
   <slug>xmpp</slug>
-  <slug>xmppsuggest</slug>
   <slug>yaml</slug>
   <slug>yml</slug>
 </slugs>

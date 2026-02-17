@@ -6,6 +6,8 @@
   <slug>bundles</slug>
   <slug>downgrade</slug>
   <slug>enterprise</slug>
+  <slug>feature-flag</slug>
+  <slug>feature-flags</slug>
   <slug>integration</slug>
   <slug>integrations</slug>
   <slug>marketplace</slug>
@@ -17,12 +19,20 @@
   <slug>plan</slug>
   <slug>plans</slug>
   <slug>premium</slug>
+  <slug>quota</slug>
+  <slug>seat</slug>
+  <slug>seats</slug>
+  <slug>sla</slug>
   <slug>subscription</slug>
   <slug>subscriptions</slug>
   <slug>team</slug>
   <slug>teams</slug>
   <slug>template</slug>
   <slug>templates</slug>
+  <slug>tenant</slug>
+  <slug>tenants</slug>
+  <slug>tier</slug>
+  <slug>tiers</slug>
   <slug>trial</slug>
   <slug>upgrade</slug>
   <slug>workflow</slug>

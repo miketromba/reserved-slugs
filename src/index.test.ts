@@ -2,6 +2,8 @@ import { describe, expect, test } from 'bun:test'
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import {
+	aiMl,
+	aiMlSlugs,
 	apiDeveloper,
 	apiDeveloperSlugs,
 	appRouteSlugs,
@@ -15,6 +17,8 @@ import {
 	dnsMailSlugs,
 	ecommerce,
 	ecommerceSlugs,
+	financial,
+	financialSlugs,
 	healthMonitoring,
 	healthMonitoringSlugs,
 	impersonation,
@@ -28,6 +32,10 @@ import {
 	languages,
 	legal,
 	legalSlugs,
+	mediaStreaming,
+	mediaStreamingSlugs,
+	profanity,
+	profanitySlugs,
 	protocolTech,
 	protocolTechSlugs,
 	reservedSlugs,
@@ -37,7 +45,9 @@ import {
 	seoMarketing,
 	seoMarketingSlugs,
 	social,
-	socialSlugs
+	socialSlugs,
+	wellKnownPaths,
+	wellKnownPathsSlugs
 } from './index'
 
 // ── Combined list ─────────────────────────────────────────────────────
@@ -124,21 +134,26 @@ describe('isReservedSlug', () => {
 
 describe('category arrays and sets', () => {
 	const categoryPairs: [string, readonly string[], Set<string>][] = [
+		['aiMl', aiMlSlugs, aiMl],
 		['apiDeveloper', apiDeveloperSlugs, apiDeveloper],
 		['appRoutes', appRouteSlugs, appRoutes],
 		['auth', authSlugs, auth],
 		['countryCodes', countryCodeSlugs, countryCodes],
 		['dnsMail', dnsMailSlugs, dnsMail],
 		['ecommerce', ecommerceSlugs, ecommerce],
+		['financial', financialSlugs, financial],
 		['healthMonitoring', healthMonitoringSlugs, healthMonitoring],
 		['impersonation', impersonationSlugs, impersonation],
 		['infrastructure', infrastructureSlugs, infrastructure],
 		['languages', languageSlugs, languages],
 		['legal', legalSlugs, legal],
+		['mediaStreaming', mediaStreamingSlugs, mediaStreaming],
+		['profanity', profanitySlugs, profanity],
 		['protocolTech', protocolTechSlugs, protocolTech],
 		['saas', saasSlugs, saas],
 		['seoMarketing', seoMarketingSlugs, seoMarketing],
-		['social', socialSlugs, social]
+		['social', socialSlugs, social],
+		['wellKnownPaths', wellKnownPathsSlugs, wellKnownPaths]
 	]
 
 	for (const [name, slugs, set] of categoryPairs) {
@@ -204,8 +219,8 @@ describe('category check functions', () => {
 // ── Categories object ─────────────────────────────────────────────────
 
 describe('categories object', () => {
-	test('has 15 categories', () => {
-		expect(Object.keys(categories).length).toBe(15)
+	test('has 20 categories', () => {
+		expect(Object.keys(categories).length).toBe(20)
 	})
 
 	test('all values are Sets', () => {
@@ -276,21 +291,26 @@ describe('generated category data files', () => {
 	const categoriesDir = join(import.meta.dir, '..', 'data', 'categories')
 
 	const categoryFiles = [
+		['ai-ml', aiMlSlugs],
 		['api-developer', apiDeveloperSlugs],
 		['app-routes', appRouteSlugs],
 		['auth', authSlugs],
 		['country-codes', countryCodeSlugs],
 		['dns-mail', dnsMailSlugs],
 		['ecommerce', ecommerceSlugs],
+		['financial', financialSlugs],
 		['health-monitoring', healthMonitoringSlugs],
 		['impersonation', impersonationSlugs],
 		['infrastructure', infrastructureSlugs],
 		['languages', languageSlugs],
 		['legal', legalSlugs],
+		['media-streaming', mediaStreamingSlugs],
+		['profanity', profanitySlugs],
 		['protocol-tech', protocolTechSlugs],
 		['saas', saasSlugs],
 		['seo-marketing', seoMarketingSlugs],
-		['social', socialSlugs]
+		['social', socialSlugs],
+		['well-known-paths', wellKnownPathsSlugs]
 	] as const
 
 	for (const [name, slugs] of categoryFiles) {

@@ -9,9 +9,9 @@
 
 # reserved-slugs
 
-A comprehensive list of **1,000+ reserved slugs** that web applications should block when allowing user-generated URL paths — preventing users from claiming routes like `/admin`, `/api`, `/login`, or `/settings` as their username, team name, or organization URL.
+A comprehensive list of **1,200+ reserved slugs** that web applications should block when allowing user-generated URL paths — preventing users from claiming routes like `/admin`, `/api`, `/login`, or `/settings` as their username, team name, or organization URL.
 
-Most existing reserved-username lists were last updated years ago and miss the patterns modern web apps actually use — SSO and MFA auth flows, health check endpoints, GraphQL and API versioning paths, SaaS concepts like workspaces and integrations, trust & safety routes, and more. This list covers all of that.
+Most existing reserved-username lists were last updated years ago and miss the patterns modern web apps actually use — SSO and MFA auth flows, health check endpoints, GraphQL and API versioning paths, SaaS concepts like workspaces and integrations, trust & safety routes, AI/ML endpoints, fintech terms, and more. This list covers all of that.
 
 ## Install
 
@@ -48,7 +48,7 @@ isReservedSlug('my-team')   // false
 ```typescript
 import { reservedSlugs } from 'reserved-slugs'
 
-// reservedSlugs is a Set<string> with 1053 entries
+// reservedSlugs is a Set<string> with 1272 entries
 reservedSlugs.has('dashboard')  // true
 reservedSlugs.has('mycompany')  // false
 ```
@@ -59,12 +59,12 @@ reservedSlugs.has('mycompany')  // false
 import { reservedSlugsArray } from 'reserved-slugs'
 
 // reservedSlugsArray is a string[] — useful for iteration, serialization, etc.
-console.log(reservedSlugsArray.length)  // 1053
+console.log(reservedSlugsArray.length)  // 1272
 ```
 
 ### Import individual categories
 
-Every slug is organized into one of 15 categories. You can import just the categories you need — as arrays, Sets, or check functions:
+Every slug is organized into one of 20 categories. You can import just the categories you need — as arrays, Sets, or check functions:
 
 ```typescript
 // Category arrays (readonly tuples with string literal types)
@@ -98,7 +98,7 @@ isEcommerceSlug('cart')  // true
 ```typescript
 import { categories } from 'reserved-slugs'
 
-// categories is a Record<string, Set<string>> with all 15 categories
+// categories is a Record<string, Set<string>> with all 20 categories
 for (const [name, set] of Object.entries(categories)) {
   console.log(`${name}: ${set.size} slugs`)
 }
@@ -120,25 +120,30 @@ const myBlocklist = new Set([
 
 ## Categories
 
-The list covers **1,053 slugs** across **15 categories**:
+The list covers **1,272 slugs** across **20 categories**:
 
 | Category | Export (array) | Export (Set) | Check function | Count | Examples |
 |----------|---------------|-------------|----------------|-------|---------|
-| Application routes | `appRouteSlugs` | `appRoutes` | `isAppRouteSlug()` | 224 | `dashboard`, `settings`, `search`, `upload` |
-| Auth & security | `authSlugs` | `auth` | `isAuthSlug()` | 42 | `login`, `sso`, `mfa`, `2fa`, `oauth` |
-| Country codes | `countryCodeSlugs` | `countryCodes` | `isCountryCodeSlug()` | 253 | `us`, `uk`, `de`, `fr`, `jp` |
-| Languages | `languageSlugs` | `languages` | `isLanguageSlug()` | 49 | `english`, `spanish`, `mandarin`, `arabic` |
-| Infrastructure | `infrastructureSlugs` | `infrastructure` | `isInfrastructureSlug()` | 76 | `cgi-bin`, `ftp`, `ssl`, `cdn`, `proxy` |
-| Health & monitoring | `healthMonitoringSlugs` | `healthMonitoring` | `isHealthMonitoringSlug()` | 12 | `healthcheck`, `heartbeat`, `metrics`, `uptime` |
-| API & developer | `apiDeveloperSlugs` | `apiDeveloper` | `isApiDeveloperSlug()` | 40 | `graphql`, `swagger`, `sdk`, `v1`–`v4` |
-| SaaS routes | `saasSlugs` | `saas` | `isSaasSlug()` | 29 | `workspace`, `org`, `subscription`, `trial` |
-| Social & platform | `socialSlugs` | `social` | `isSocialSlug()` | 73 | `blog`, `follow`, `inbox`, `profile`, `wiki` |
+| AI & machine learning | `aiMlSlugs` | `aiMl` | `isAiMlSlug()` | 34 | `ai`, `copilot`, `chatbot`, `llm`, `prompt` |
+| API & developer | `apiDeveloperSlugs` | `apiDeveloper` | `isApiDeveloperSlug()` | 52 | `graphql`, `swagger`, `sdk`, `v1`–`v4` |
+| Application routes | `appRouteSlugs` | `appRoutes` | `isAppRouteSlug()` | 234 | `dashboard`, `settings`, `search`, `upload` |
+| Auth & security | `authSlugs` | `auth` | `isAuthSlug()` | 51 | `login`, `sso`, `mfa`, `passkey`, `oauth` |
+| Country codes | `countryCodeSlugs` | `countryCodes` | `isCountryCodeSlug()` | 252 | `us`, `uk`, `de`, `fr`, `jp` |
 | DNS & mail | `dnsMailSlugs` | `dnsMail` | `isDnsMailSlug()` | 44 | `smtp`, `ns1`–`ns10`, `www`, `postmaster` |
-| Protocol & tech | `protocolTechSlugs` | `protocolTech` | `isProtocolTechSlug()` | 39 | `http`, `json`, `rss`, `websocket` |
-| Legal & compliance | `legalSlugs` | `legal` | `isLegalSlug()` | 22 | `dmca`, `gdpr`, `privacy`, `copyright` |
-| SEO & marketing | `seoMarketingSlugs` | `seoMarketing` | `isSeoMarketingSlug()` | 71 | `about`, `pricing`, `careers`, `press` |
-| E-commerce | `ecommerceSlugs` | `ecommerce` | `isEcommerceSlug()` | 35 | `cart`, `checkout`, `shipping`, `wishlist` |
-| Impersonation risks | `impersonationSlugs` | `impersonation` | `isImpersonationSlug()` | 26 | `admin`, `ceo`, `moderator`, `verified` |
+| E-commerce | `ecommerceSlugs` | `ecommerce` | `isEcommerceSlug()` | 39 | `cart`, `checkout`, `shipping`, `wishlist` |
+| Financial & fintech | `financialSlugs` | `financial` | `isFinancialSlug()` | 51 | `wallet`, `crypto`, `trading`, `portfolio` |
+| Health & monitoring | `healthMonitoringSlugs` | `healthMonitoring` | `isHealthMonitoringSlug()` | 12 | `healthcheck`, `heartbeat`, `metrics`, `uptime` |
+| Impersonation risks | `impersonationSlugs` | `impersonation` | `isImpersonationSlug()` | 36 | `admin`, `ceo`, `moderator`, `verified` |
+| Infrastructure | `infrastructureSlugs` | `infrastructure` | `isInfrastructureSlug()` | 85 | `cgi-bin`, `docker`, `ssl`, `cdn`, `proxy` |
+| Languages | `languageSlugs` | `languages` | `isLanguageSlug()` | 49 | `english`, `spanish`, `mandarin`, `arabic` |
+| Legal & compliance | `legalSlugs` | `legal` | `isLegalSlug()` | 31 | `dmca`, `gdpr`, `privacy`, `cookie-policy` |
+| Media & streaming | `mediaStreamingSlugs` | `mediaStreaming` | `isMediaStreamingSlug()` | 34 | `podcast`, `stream`, `live`, `channel` |
+| Profanity & offensive | `profanitySlugs` | `profanity` | `isProfanitySlug()` | 41 | Slurs, hate speech, and strong profanity |
+| Protocol & tech | `protocolTechSlugs` | `protocolTech` | `isProtocolTechSlug()` | 34 | `http`, `json`, `rss`, `websocket` |
+| SaaS routes | `saasSlugs` | `saas` | `isSaasSlug()` | 39 | `workspace`, `org`, `subscription`, `trial` |
+| SEO & marketing | `seoMarketingSlugs` | `seoMarketing` | `isSeoMarketingSlug()` | 70 | `about`, `pricing`, `careers`, `press` |
+| Social & platform | `socialSlugs` | `social` | `isSocialSlug()` | 68 | `blog`, `follow`, `inbox`, `profile`, `wiki` |
+| Well-known paths | `wellKnownPathsSlugs` | `wellKnownPaths` | `isWellKnownPathSlug()` | 29 | `wp-admin`, `xmlrpc`, `cpanel`, `well-known` |
 
 ## Use without JavaScript
 
@@ -167,7 +172,7 @@ data/categories/ecommerce/slugs.json
 ...
 ```
 
-Category folders: `api-developer`, `app-routes`, `auth`, `country-codes`, `dns-mail`, `ecommerce`, `health-monitoring`, `impersonation`, `infrastructure`, `languages`, `legal`, `protocol-tech`, `saas`, `seo-marketing`, `social`.
+Category folders: `ai-ml`, `api-developer`, `app-routes`, `auth`, `country-codes`, `dns-mail`, `ecommerce`, `financial`, `health-monitoring`, `impersonation`, `infrastructure`, `languages`, `legal`, `media-streaming`, `profanity`, `protocol-tech`, `saas`, `seo-marketing`, `social`, `well-known-paths`.
 
 ### Fetch from GitHub (raw)
 
@@ -206,10 +211,13 @@ When your application lets users choose a slug (for a username, team, or organiz
 - **SEO conflicts** — User pages at `/blog`, `/pricing`, or `/about` compete with your own marketing pages
 - **Infrastructure conflicts** — Slugs like `/health`, `/metrics`, `/cdn`, or `/ns1` can interfere with monitoring, DNS, and other services
 - **Legal exposure** — Slugs like `/dmca`, `/abuse`, or `/compliance` can undermine trust & safety workflows
+- **Profanity & abuse** — Slugs containing slurs or strong profanity cause brand damage and harm users
+- **Financial confusion** — Slugs like `/wallet`, `/crypto`, or `/trading` can mislead users on fintech platforms
+- **Scanner targets** — Bots constantly probe `/wp-admin`, `/xmlrpc`, and `/cpanel`; reserving these reduces noise
 
-Existing reserved-username lists floating around GitHub and Google Sheets were created years ago and haven't kept up with how modern web applications are built. They'll catch `/admin` and `/ftp`, but miss `/graphql`, `/sso`, `/healthcheck`, `/workspace`, `/v1`, or `/dmca` — the kinds of routes that every production SaaS app ships today.
+Existing reserved-username lists floating around GitHub and Google Sheets were created years ago and haven't kept up with how modern web applications are built. They'll catch `/admin` and `/ftp`, but miss `/graphql`, `/sso`, `/healthcheck`, `/workspace`, `/v1`, `/dmca`, `/ai`, or `/wallet` — the kinds of routes that every production app ships today.
 
-This list was built on top of those earlier efforts, then significantly expanded to cover modern auth patterns, API conventions, SaaS routing, monitoring endpoints, legal/compliance paths, and impersonation risks.
+This list was built on top of those earlier efforts, then significantly expanded to cover modern auth patterns, API conventions, SaaS routing, monitoring endpoints, legal/compliance paths, impersonation risks, AI/ML endpoints, financial/fintech terms, media/streaming routes, profanity filtering, and well-known scanner targets.
 
 ## Contributing
 
@@ -228,21 +236,26 @@ Please keep slugs **lowercase** and **alphabetically sorted** within each catego
 
 | File | Description |
 |------|-------------|
+| `src/categories/ai-ml.ts` | AI & machine learning |
 | `src/categories/api-developer.ts` | API & developer tooling |
 | `src/categories/app-routes.ts` | Common application routes |
 | `src/categories/auth.ts` | Authentication & security |
 | `src/categories/country-codes.ts` | ISO country codes |
 | `src/categories/dns-mail.ts` | DNS & mail servers |
 | `src/categories/ecommerce.ts` | E-commerce terms |
+| `src/categories/financial.ts` | Financial & fintech |
 | `src/categories/health-monitoring.ts` | Health checks & monitoring |
 | `src/categories/impersonation.ts` | Impersonation risks |
 | `src/categories/infrastructure.ts` | Server & infrastructure |
 | `src/categories/languages.ts` | Language names |
 | `src/categories/legal.ts` | Legal & compliance |
+| `src/categories/media-streaming.ts` | Media & streaming |
+| `src/categories/profanity.ts` | Profanity & offensive terms |
 | `src/categories/protocol-tech.ts` | Protocols & technology |
 | `src/categories/saas.ts` | SaaS routes |
 | `src/categories/seo-marketing.ts` | SEO & marketing pages |
 | `src/categories/social.ts` | Social & platform features |
+| `src/categories/well-known-paths.ts` | Well-known paths & scanner targets |
 
 ## Credits
 

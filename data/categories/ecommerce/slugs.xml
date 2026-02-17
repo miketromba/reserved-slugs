@@ -12,11 +12,13 @@
   <slug>gifts</slug>
   <slug>invoice</slug>
   <slug>invoices</slug>
+  <slug>loyalty</slug>
   <slug>offer</slug>
   <slug>offers</slug>
   <slug>order</slug>
   <slug>orders</slug>
   <slug>payment</slug>
+  <slug>payments</slug>
   <slug>price</slug>
   <slug>product</slug>
   <slug>products</slug>
@@ -27,10 +29,12 @@
   <slug>refunds</slug>
   <slug>return</slug>
   <slug>returns</slug>
+  <slug>rewards</slug>
   <slug>sale</slug>
   <slug>sales</slug>
   <slug>shipping</slug>
   <slug>shop</slug>
+  <slug>store-credit</slug>
   <slug>tracking</slug>
   <slug>transfers</slug>
   <slug>vendas</slug>

@@ -14,7 +14,6 @@ favorites
 feed
 feedback
 feeds
-flog
 follow
 followers
 following
@@ -40,8 +39,6 @@ messenger
 microblog
 microblogs
 msg
-msn
-nick
 nickname
 outbox
 poll
@@ -64,7 +61,6 @@ topics
 trending
 trends
 twitter
-twittr
 unfollow
 unsubscribe
 vote
