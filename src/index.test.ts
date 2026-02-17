@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test'
-import { existsSync, readFileSync } from 'fs'
-import { join } from 'path'
+import { existsSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { isReservedSlug, reservedSlugs, reservedSlugsArray } from './index'
 
 describe('reservedSlugs', () => {
@@ -93,7 +93,7 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/^ {2}- /gm)
 		expect(entries).not.toBeNull()
-		expect(entries!.length).toBe(904)
+		expect(entries?.length).toBe(904)
 	})
 
 	test('slugs.xml exists and has correct count', () => {
@@ -102,7 +102,7 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/<slug>/g)
 		expect(entries).not.toBeNull()
-		expect(entries!.length).toBe(904)
+		expect(entries?.length).toBe(904)
 	})
 
 	test('slugs.toml exists and has correct count', () => {
@@ -111,6 +111,6 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/^ {2}"/gm)
 		expect(entries).not.toBeNull()
-		expect(entries!.length).toBe(904)
+		expect(entries?.length).toBe(904)
 	})
 })

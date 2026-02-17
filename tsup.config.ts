@@ -7,5 +7,5 @@ export default defineConfig({
 	splitting: false,
 	clean: true,
 	target: 'es2020',
-	outDir: 'dist',
+	outDir: 'dist'
 })

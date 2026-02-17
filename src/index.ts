@@ -903,7 +903,7 @@ export const reservedSlugs = new Set([
 	'yu',
 	'za',
 	'zm',
-	'zw',
+	'zw'
 ])
 
 /** Array form for convenience */
