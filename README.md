@@ -1,7 +1,11 @@
-# reserved-slugs
+<p align="center">
+  <img src="assets/banner.png" alt="reserved-slugs" width="100%" />
+</p>
 
-[![npm version](https://img.shields.io/npm/v/reserved-slugs.svg)](https://www.npmjs.com/package/reserved-slugs)
-[![license](https://img.shields.io/npm/l/reserved-slugs.svg)](https://github.com/miketromba/reserved-slugs/blob/main/LICENSE)
+<p align="center">
+  <a href="https://www.npmjs.com/package/reserved-slugs"><img src="https://img.shields.io/npm/v/reserved-slugs.svg" alt="npm version" /></a>
+  <a href="https://github.com/miketromba/reserved-slugs/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/reserved-slugs.svg" alt="license" /></a>
+</p>
 
 A comprehensive list of **1,000+ reserved slugs** that web applications should block when allowing user-generated URL paths — preventing users from claiming routes like `/admin`, `/api`, `/login`, or `/settings` as their username, team name, or organization URL.
 
