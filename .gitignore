@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# output
+dist/
+
+# env
+.env
+.env.*
+
+# caches
+*.tsbuildinfo
+.cache
+
+# OS
+.DS_Store
+
+# logs
+*.log
+
+# IDE
+.idea/
+.vscode/
