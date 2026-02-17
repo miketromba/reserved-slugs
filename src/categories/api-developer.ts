@@ -1,0 +1,48 @@
+/**
+ * API and developer tooling slugs
+ *
+ * Paths used for API endpoints, developer documentation, version prefixes,
+ * source control, package tooling, and developer-facing infrastructure.
+ */
+export const apiDeveloperSlugs = [
+	'api',
+	'bug',
+	'cli',
+	'code',
+	'codereview',
+	'debug',
+	'dev',
+	'devel',
+	'developer',
+	'developers',
+	'doc',
+	'docs',
+	'documentation',
+	'gist',
+	'git',
+	'github',
+	'graph',
+	'graphql',
+	'grpc',
+	'oembed',
+	'openapi',
+	'playground',
+	'readme',
+	'redoc',
+	'release',
+	'repo',
+	'repositories',
+	'repository',
+	'rest',
+	'sandbox',
+	'sdk',
+	'spec',
+	'swagger',
+	'v1',
+	'v2',
+	'v3',
+	'v4',
+	'version',
+	'webhook',
+	'webhooks'
+] as const

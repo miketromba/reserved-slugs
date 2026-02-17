@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>health</slug>
+  <slug>health-check</slug>
+  <slug>healthcheck</slug>
+  <slug>heartbeat</slug>
+  <slug>liveness</slug>
+  <slug>metrics</slug>
+  <slug>ping</slug>
+  <slug>readiness</slug>
+  <slug>stat</slug>
+  <slug>stats</slug>
+  <slug>status</slug>
+  <slug>uptime</slug>
+</slugs>

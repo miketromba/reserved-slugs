@@ -7,6 +7,8 @@
   <a href="https://github.com/miketromba/reserved-slugs/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/reserved-slugs.svg" alt="license" /></a>
 </p>
 
+# reserved-slugs
+
 A comprehensive list of **1,000+ reserved slugs** that web applications should block when allowing user-generated URL paths — preventing users from claiming routes like `/admin`, `/api`, `/login`, or `/settings` as their username, team name, or organization URL.
 
 Most existing reserved-username lists were last updated years ago and miss the patterns modern web apps actually use — SSO and MFA auth flows, health check endpoints, GraphQL and API versioning paths, SaaS concepts like workspaces and integrations, trust & safety routes, and more. This list covers all of that.
@@ -60,11 +62,89 @@ import { reservedSlugsArray } from 'reserved-slugs'
 console.log(reservedSlugsArray.length)  // 1053
 ```
 
+### Import individual categories
+
+Every slug is organized into one of 15 categories. You can import just the categories you need — as arrays, Sets, or check functions:
+
+```typescript
+// Category arrays (readonly tuples with string literal types)
+import {
+  countryCodeSlugs,   // readonly ['ac', 'ad', 'ae', ...]
+  authSlugs,          // readonly ['2fa', 'access', 'activate', ...]
+  ecommerceSlugs      // readonly ['billing', 'cart', 'checkout', ...]
+} from 'reserved-slugs'
+
+// Category Sets
+import {
+  countryCodes,       // Set<string>
+  auth,               // Set<string>
+  ecommerce           // Set<string>
+} from 'reserved-slugs'
+
+// Category check functions (case-insensitive)
+import {
+  isCountryCodeSlug,
+  isAuthSlug,
+  isEcommerceSlug
+} from 'reserved-slugs'
+
+isCountryCodeSlug('US')  // true
+isAuthSlug('login')      // true
+isEcommerceSlug('cart')  // true
+```
+
+### Programmatic access to all categories
+
+```typescript
+import { categories } from 'reserved-slugs'
+
+// categories is a Record<string, Set<string>> with all 15 categories
+for (const [name, set] of Object.entries(categories)) {
+  console.log(`${name}: ${set.size} slugs`)
+}
+```
+
+### Combine specific categories
+
+Build a custom set from only the categories that matter for your use case:
+
+```typescript
+import { authSlugs, impersonationSlugs, legalSlugs } from 'reserved-slugs'
+
+const myBlocklist = new Set([
+  ...authSlugs,
+  ...impersonationSlugs,
+  ...legalSlugs
+])
+```
+
+## Categories
+
+The list covers **1,053 slugs** across **15 categories**:
+
+| Category | Export (array) | Export (Set) | Check function | Count | Examples |
+|----------|---------------|-------------|----------------|-------|---------|
+| Application routes | `appRouteSlugs` | `appRoutes` | `isAppRouteSlug()` | 224 | `dashboard`, `settings`, `search`, `upload` |
+| Auth & security | `authSlugs` | `auth` | `isAuthSlug()` | 42 | `login`, `sso`, `mfa`, `2fa`, `oauth` |
+| Country codes | `countryCodeSlugs` | `countryCodes` | `isCountryCodeSlug()` | 253 | `us`, `uk`, `de`, `fr`, `jp` |
+| Languages | `languageSlugs` | `languages` | `isLanguageSlug()` | 49 | `english`, `spanish`, `mandarin`, `arabic` |
+| Infrastructure | `infrastructureSlugs` | `infrastructure` | `isInfrastructureSlug()` | 76 | `cgi-bin`, `ftp`, `ssl`, `cdn`, `proxy` |
+| Health & monitoring | `healthMonitoringSlugs` | `healthMonitoring` | `isHealthMonitoringSlug()` | 12 | `healthcheck`, `heartbeat`, `metrics`, `uptime` |
+| API & developer | `apiDeveloperSlugs` | `apiDeveloper` | `isApiDeveloperSlug()` | 40 | `graphql`, `swagger`, `sdk`, `v1`–`v4` |
+| SaaS routes | `saasSlugs` | `saas` | `isSaasSlug()` | 29 | `workspace`, `org`, `subscription`, `trial` |
+| Social & platform | `socialSlugs` | `social` | `isSocialSlug()` | 73 | `blog`, `follow`, `inbox`, `profile`, `wiki` |
+| DNS & mail | `dnsMailSlugs` | `dnsMail` | `isDnsMailSlug()` | 44 | `smtp`, `ns1`–`ns10`, `www`, `postmaster` |
+| Protocol & tech | `protocolTechSlugs` | `protocolTech` | `isProtocolTechSlug()` | 39 | `http`, `json`, `rss`, `websocket` |
+| Legal & compliance | `legalSlugs` | `legal` | `isLegalSlug()` | 22 | `dmca`, `gdpr`, `privacy`, `copyright` |
+| SEO & marketing | `seoMarketingSlugs` | `seoMarketing` | `isSeoMarketingSlug()` | 71 | `about`, `pricing`, `careers`, `press` |
+| E-commerce | `ecommerceSlugs` | `ecommerce` | `isEcommerceSlug()` | 35 | `cart`, `checkout`, `shipping`, `wishlist` |
+| Impersonation risks | `impersonationSlugs` | `impersonation` | `isImpersonationSlug()` | 26 | `admin`, `ceo`, `moderator`, `verified` |
+
 ## Use without JavaScript
 
 Every slug in the list is also available in six static data formats, committed to the repo and published in the npm package. You can fetch them directly from GitHub or from a CDN — no JavaScript or npm install required.
 
-### Available formats
+### Available formats (combined)
 
 | Format | File | Description |
 |--------|------|-------------|
@@ -75,26 +155,30 @@ Every slug in the list is also available in six static data formats, committed t
 | XML | [`data/slugs.xml`](data/slugs.xml) | XML document |
 | TOML | [`data/slugs.toml`](data/slugs.toml) | TOML array |
 
+### Per-category data files
+
+Each category is also available in all six formats under `data/categories/`:
+
+```
+data/categories/auth.json
+data/categories/country-codes.json
+data/categories/ecommerce.json
+...
+```
+
+Category filenames: `api-developer`, `app-routes`, `auth`, `country-codes`, `dns-mail`, `ecommerce`, `health-monitoring`, `impersonation`, `infrastructure`, `languages`, `legal`, `protocol-tech`, `saas`, `seo-marketing`, `social`.
+
 ### Fetch from GitHub (raw)
 
 ```bash
-# JSON
+# Combined JSON
 curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.json
 
-# Plain text
+# Combined plain text
 curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.txt
 
-# CSV
-curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.csv
-
-# YAML
-curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.yml
-
-# XML
-curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.xml
-
-# TOML
-curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/slugs.toml
+# Single category (e.g. auth)
+curl -sL https://raw.githubusercontent.com/miketromba/reserved-slugs/main/data/categories/auth.json
 ```
 
 ### Fetch from CDN (npm package)
@@ -104,30 +188,12 @@ Since the `data/` directory is included in the npm package, you can also fetch t
 ```bash
 # jsDelivr
 curl -sL https://cdn.jsdelivr.net/npm/reserved-slugs/data/slugs.json
+curl -sL https://cdn.jsdelivr.net/npm/reserved-slugs/data/categories/auth.json
 
 # unpkg
 curl -sL https://unpkg.com/reserved-slugs/data/slugs.json
+curl -sL https://unpkg.com/reserved-slugs/data/categories/auth.json
 ```
-
-## What's included
-
-The list covers **1,053 slugs** across several categories:
-
-- **Application routes** — `login`, `signup`, `dashboard`, `settings`, `admin`, `api`, `auth`, `billing`, `checkout`, `onboarding`, `preferences`, etc.
-- **Auth & security** — `sso`, `saml`, `mfa`, `2fa`, `totp`, `oauth`, `verify`, `confirm`, `authorize`, `recovery`, `token`, `sign-out`, etc.
-- **Infrastructure & server paths** — `cgi-bin`, `phpmyadmin`, `server-status`, `postmaster`, `webmaster`, `ftp`, `ssh`, `ssl`, `cdn`, `proxy`, `gateway`, etc.
-- **Health & monitoring** — `health`, `healthcheck`, `heartbeat`, `liveness`, `readiness`, `metrics`, `uptime`, etc.
-- **API & developer tooling** — `graphql`, `rest`, `grpc`, `swagger`, `openapi`, `sdk`, `cli`, `v1`–`v4`, `sandbox`, `playground`, etc.
-- **Modern SaaS routes** — `workspace`, `org`, `integration`, `template`, `workflow`, `automation`, `marketplace`, `invoice`, `subscription`, `trial`, etc.
-- **Country codes** — Two-letter ISO country codes (`us`, `uk`, `de`, `fr`, `jp`, etc.)
-- **Languages** — `english`, `spanish`, `french`, `german`, `chinese`, `arabic`, `hindi`, `japanese`, etc.
-- **Social & platform terms** — `blog`, `forum`, `wiki`, `profile`, `follow`, `followers`, `feed`, `share`, `inbox`, `poll`, `mention`, `hashtag`, etc.
-- **DNS & mail names** — `mail`, `smtp`, `pop3`, `imap`, `ns1`–`ns10`, `www`, `www1`–`www7`, `localhost`, etc.
-- **Protocol & tech terms** — `http`, `https`, `json`, `xml`, `rss`, `atom`, `websocket`, `graphql`, `api`, etc.
-- **Legal & trust/safety** — `abuse`, `dmca`, `copyright`, `trademark`, `compliance`, `gdpr`, `ccpa`, `takedown`, `verified`, etc.
-- **SEO & content** — `about`, `contact`, `help`, `faq`, `terms`, `privacy`, `press`, `careers`, `pricing`, `roadmap`, `brand`, etc.
-- **E-commerce** — `cart`, `checkout`, `shop`, `invoice`, `refund`, `coupon`, `discount`, `shipping`, `wishlist`, `tracking`, etc.
-- **Impersonation risks** — `moderator`, `ceo`, `cto`, `cfo`, `vp`, `employee`, `partner`, `ambassador`, `verified`, etc.
 
 ## Why use this?
 
@@ -150,12 +216,32 @@ PRs are welcome to add missing slugs or suggest improvements!
 
 To contribute:
 
-1. Edit `src/index.ts` — this is the single source of truth
+1. Edit the appropriate file in `src/categories/` — these are the source of truth
 2. Run `bun run build` to regenerate all data formats
 3. Run `bun test` to verify everything passes
 4. Submit your PR
 
-Please keep slugs **lowercase** and **alphabetically sorted**.
+Please keep slugs **lowercase** and **alphabetically sorted** within each category file.
+
+### Category files
+
+| File | Description |
+|------|-------------|
+| `src/categories/api-developer.ts` | API & developer tooling |
+| `src/categories/app-routes.ts` | Common application routes |
+| `src/categories/auth.ts` | Authentication & security |
+| `src/categories/country-codes.ts` | ISO country codes |
+| `src/categories/dns-mail.ts` | DNS & mail servers |
+| `src/categories/ecommerce.ts` | E-commerce terms |
+| `src/categories/health-monitoring.ts` | Health checks & monitoring |
+| `src/categories/impersonation.ts` | Impersonation risks |
+| `src/categories/infrastructure.ts` | Server & infrastructure |
+| `src/categories/languages.ts` | Language names |
+| `src/categories/legal.ts` | Legal & compliance |
+| `src/categories/protocol-tech.ts` | Protocols & technology |
+| `src/categories/saas.ts` | SaaS routes |
+| `src/categories/seo-marketing.ts` | SEO & marketing pages |
+| `src/categories/social.ts` | Social & platform features |
 
 ## Credits
 

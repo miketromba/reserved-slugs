@@ -5,14 +5,19 @@
 - **Lint:** `bun run lint` (Biome)
 - **Test:** `bun test`
 - **Pre-commit hook:** Husky runs lint + test automatically
-- **Source of truth:** `src/index.ts` — the `data/` files are generated from it
+- **Source of truth:** `src/categories/*.ts` — each file contains one category of slugs
+- **Generated:** `src/index.ts` merges, deduplicates, and sorts all categories; `data/` files are generated from it
+
+## Adding slugs
+
+Add new entries to the appropriate `src/categories/*.ts` file, keeping entries lowercase and alphabetically sorted.
 
 ## Publishing
 
 Automated via GitHub Actions + Trusted Publishing (no npm token needed).
 
 ```bash
-npm version patch   # or minor / major
+npm version patch # or minor / major
 git push && git push --tags
 ```
 

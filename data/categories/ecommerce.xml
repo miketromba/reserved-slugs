@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>billing</slug>
+  <slug>cart</slug>
+  <slug>checkout</slug>
+  <slug>compras</slug>
+  <slug>coupon</slug>
+  <slug>coupons</slug>
+  <slug>discount</slug>
+  <slug>ecommerce</slug>
+  <slug>gift</slug>
+  <slug>gifts</slug>
+  <slug>invoice</slug>
+  <slug>invoices</slug>
+  <slug>offer</slug>
+  <slug>offers</slug>
+  <slug>order</slug>
+  <slug>orders</slug>
+  <slug>payment</slug>
+  <slug>price</slug>
+  <slug>product</slug>
+  <slug>products</slug>
+  <slug>promo</slug>
+  <slug>receipt</slug>
+  <slug>receipts</slug>
+  <slug>refund</slug>
+  <slug>refunds</slug>
+  <slug>return</slug>
+  <slug>returns</slug>
+  <slug>sale</slug>
+  <slug>sales</slug>
+  <slug>shipping</slug>
+  <slug>shop</slug>
+  <slug>tracking</slug>
+  <slug>transfers</slug>
+  <slug>vendas</slug>
+  <slug>wishlist</slug>
+</slugs>

@@ -1,0 +1,14 @@
+[
+  "health",
+  "health-check",
+  "healthcheck",
+  "heartbeat",
+  "liveness",
+  "metrics",
+  "ping",
+  "readiness",
+  "stat",
+  "stats",
+  "status",
+  "uptime"
+]

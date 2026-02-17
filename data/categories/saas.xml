@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>automation</slug>
+  <slug>automations</slug>
+  <slug>bundle</slug>
+  <slug>bundles</slug>
+  <slug>downgrade</slug>
+  <slug>enterprise</slug>
+  <slug>integration</slug>
+  <slug>integrations</slug>
+  <slug>marketplace</slug>
+  <slug>onboarding</slug>
+  <slug>org</slug>
+  <slug>organization</slug>
+  <slug>organizations</slug>
+  <slug>orgs</slug>
+  <slug>plan</slug>
+  <slug>plans</slug>
+  <slug>premium</slug>
+  <slug>subscription</slug>
+  <slug>subscriptions</slug>
+  <slug>team</slug>
+  <slug>teams</slug>
+  <slug>template</slug>
+  <slug>templates</slug>
+  <slug>trial</slug>
+  <slug>upgrade</slug>
+  <slug>workflow</slug>
+  <slug>workflows</slug>
+  <slug>workspace</slug>
+  <slug>workspaces</slug>
+</slugs>

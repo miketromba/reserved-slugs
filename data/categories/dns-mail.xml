@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>email</slug>
+  <slug>hostmaster</slug>
+  <slug>imap</slug>
+  <slug>mail</slug>
+  <slug>mail1</slug>
+  <slug>mail2</slug>
+  <slug>mail3</slug>
+  <slug>mail4</slug>
+  <slug>mail5</slug>
+  <slug>mailer</slug>
+  <slug>mailing</slug>
+  <slug>mobilemail</slug>
+  <slug>named</slug>
+  <slug>ns</slug>
+  <slug>ns1</slug>
+  <slug>ns10</slug>
+  <slug>ns2</slug>
+  <slug>ns3</slug>
+  <slug>ns4</slug>
+  <slug>ns5</slug>
+  <slug>ns6</slug>
+  <slug>ns7</slug>
+  <slug>ns8</slug>
+  <slug>ns9</slug>
+  <slug>pop</slug>
+  <slug>pop3</slug>
+  <slug>postfix</slug>
+  <slug>postmaster</slug>
+  <slug>smtp</slug>
+  <slug>subdomain</slug>
+  <slug>webmail</slug>
+  <slug>webmaster</slug>
+  <slug>ww</slug>
+  <slug>wws</slug>
+  <slug>www</slug>
+  <slug>www1</slug>
+  <slug>www2</slug>
+  <slug>www3</slug>
+  <slug>www4</slug>
+  <slug>www5</slug>
+  <slug>www6</slug>
+  <slug>www7</slug>
+  <slug>wwws</slug>
+  <slug>wwww</slug>
+</slugs>

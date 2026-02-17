@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>2fa</slug>
+  <slug>access</slug>
+  <slug>activate</slug>
+  <slug>anon</slug>
+  <slug>anonymous</slug>
+  <slug>auth</slug>
+  <slug>authentication</slug>
+  <slug>authorize</slug>
+  <slug>captcha</slug>
+  <slug>confirm</slug>
+  <slug>forgot</slug>
+  <slug>log-in</slug>
+  <slug>log-out</slug>
+  <slug>login</slug>
+  <slug>logout</slug>
+  <slug>mfa</slug>
+  <slug>oauth</slug>
+  <slug>openid</slug>
+  <slug>password</slug>
+  <slug>recovery</slug>
+  <slug>register</slug>
+  <slug>registration</slug>
+  <slug>reset</slug>
+  <slug>revoke</slug>
+  <slug>saml</slug>
+  <slug>secure</slug>
+  <slug>security</slug>
+  <slug>session</slug>
+  <slug>sessions</slug>
+  <slug>sign-in</slug>
+  <slug>sign-out</slug>
+  <slug>sign-up</slug>
+  <slug>signin</slug>
+  <slug>signout</slug>
+  <slug>signup</slug>
+  <slug>sso</slug>
+  <slug>token</slug>
+  <slug>tokens</slug>
+  <slug>totp</slug>
+  <slug>unverified</slug>
+  <slug>verified</slug>
+  <slug>verify</slug>
+</slugs>

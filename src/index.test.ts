@@ -1,12 +1,54 @@
 import { describe, expect, test } from 'bun:test'
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { isReservedSlug, reservedSlugs, reservedSlugsArray } from './index'
+import {
+	apiDeveloper,
+	apiDeveloperSlugs,
+	appRouteSlugs,
+	appRoutes,
+	auth,
+	authSlugs,
+	categories,
+	countryCodeSlugs,
+	countryCodes,
+	dnsMail,
+	dnsMailSlugs,
+	ecommerce,
+	ecommerceSlugs,
+	healthMonitoring,
+	healthMonitoringSlugs,
+	impersonation,
+	impersonationSlugs,
+	infrastructure,
+	infrastructureSlugs,
+	isAuthSlug,
+	isCountryCodeSlug,
+	isReservedSlug,
+	languageSlugs,
+	languages,
+	legal,
+	legalSlugs,
+	protocolTech,
+	protocolTechSlugs,
+	reservedSlugs,
+	reservedSlugsArray,
+	saas,
+	saasSlugs,
+	seoMarketing,
+	seoMarketingSlugs,
+	social,
+	socialSlugs
+} from './index'
+
+// ── Combined list ─────────────────────────────────────────────────────
 
 describe('reservedSlugs', () => {
-	test('is a Set with the expected size', () => {
+	test('is a Set', () => {
 		expect(reservedSlugs).toBeInstanceOf(Set)
-		expect(reservedSlugs.size).toBe(1053)
+	})
+
+	test('has at least 1000 entries', () => {
+		expect(reservedSlugs.size).toBeGreaterThanOrEqual(1000)
 	})
 
 	test('contains known reserved slugs', () => {
@@ -22,6 +64,21 @@ describe('reservedSlugs', () => {
 			expect(reservedSlugs.has(slug)).toBe(false)
 		}
 	})
+
+	test('is sorted alphabetically', () => {
+		const sorted = [...reservedSlugsArray].sort()
+		expect(reservedSlugsArray).toEqual(sorted)
+	})
+
+	test('has no duplicates', () => {
+		expect(reservedSlugsArray.length).toBe(reservedSlugs.size)
+	})
+
+	test('all entries are lowercase', () => {
+		for (const slug of reservedSlugsArray) {
+			expect(slug).toBe(slug.toLowerCase())
+		}
+	})
 })
 
 describe('reservedSlugsArray', () => {
@@ -35,6 +92,8 @@ describe('reservedSlugsArray', () => {
 		}
 	})
 })
+
+// ── Lookup helpers ────────────────────────────────────────────────────
 
 describe('isReservedSlug', () => {
 	test('returns true for reserved slugs', () => {
@@ -61,22 +120,120 @@ describe('isReservedSlug', () => {
 	})
 })
 
+// ── Individual categories ─────────────────────────────────────────────
+
+describe('category arrays and sets', () => {
+	const categoryPairs: [string, readonly string[], Set<string>][] = [
+		['apiDeveloper', apiDeveloperSlugs, apiDeveloper],
+		['appRoutes', appRouteSlugs, appRoutes],
+		['auth', authSlugs, auth],
+		['countryCodes', countryCodeSlugs, countryCodes],
+		['dnsMail', dnsMailSlugs, dnsMail],
+		['ecommerce', ecommerceSlugs, ecommerce],
+		['healthMonitoring', healthMonitoringSlugs, healthMonitoring],
+		['impersonation', impersonationSlugs, impersonation],
+		['infrastructure', infrastructureSlugs, infrastructure],
+		['languages', languageSlugs, languages],
+		['legal', legalSlugs, legal],
+		['protocolTech', protocolTechSlugs, protocolTech],
+		['saas', saasSlugs, saas],
+		['seoMarketing', seoMarketingSlugs, seoMarketing],
+		['social', socialSlugs, social]
+	]
+
+	for (const [name, slugs, set] of categoryPairs) {
+		test(`${name}: array is non-empty`, () => {
+			expect(slugs.length).toBeGreaterThan(0)
+		})
+
+		test(`${name}: set size matches array length`, () => {
+			expect(set.size).toBe(slugs.length)
+		})
+
+		test(`${name}: all entries are lowercase`, () => {
+			for (const slug of slugs) {
+				expect(slug).toBe(slug.toLowerCase())
+			}
+		})
+
+		test(`${name}: array is sorted`, () => {
+			const sorted = [...slugs].sort()
+			expect([...slugs]).toEqual(sorted)
+		})
+
+		test(`${name}: all entries are in the combined set`, () => {
+			for (const slug of slugs) {
+				expect(reservedSlugs.has(slug)).toBe(true)
+			}
+		})
+	}
+
+	test('every slug in the combined set belongs to at least one category', () => {
+		const allCategorySlugs = new Set(
+			categoryPairs.flatMap(([, slugs]) => [...slugs])
+		)
+		for (const slug of reservedSlugs) {
+			expect(allCategorySlugs.has(slug)).toBe(true)
+		}
+	})
+
+	test('no duplicates within any single category', () => {
+		for (const [, slugs] of categoryPairs) {
+			const unique = new Set(slugs)
+			expect(unique.size).toBe(slugs.length)
+		}
+	})
+})
+
+// ── Category-specific check functions ─────────────────────────────────
+
+describe('category check functions', () => {
+	test('isAuthSlug works', () => {
+		expect(isAuthSlug('login')).toBe(true)
+		expect(isAuthSlug('LOGIN')).toBe(true)
+		expect(isAuthSlug('dashboard')).toBe(false)
+	})
+
+	test('isCountryCodeSlug works', () => {
+		expect(isCountryCodeSlug('us')).toBe(true)
+		expect(isCountryCodeSlug('US')).toBe(true)
+		expect(isCountryCodeSlug('login')).toBe(false)
+	})
+})
+
+// ── Categories object ─────────────────────────────────────────────────
+
+describe('categories object', () => {
+	test('has 15 categories', () => {
+		expect(Object.keys(categories).length).toBe(15)
+	})
+
+	test('all values are Sets', () => {
+		for (const set of Object.values(categories)) {
+			expect(set).toBeInstanceOf(Set)
+		}
+	})
+})
+
+// ── Generated data files ──────────────────────────────────────────────
+
 describe('generated data files', () => {
 	const dataDir = join(import.meta.dir, '..', 'data')
+	const count = reservedSlugsArray.length
 
 	test('slugs.json exists and has correct count', () => {
 		const filePath = join(dataDir, 'slugs.json')
 		expect(existsSync(filePath)).toBe(true)
 		const data = JSON.parse(readFileSync(filePath, 'utf-8'))
 		expect(Array.isArray(data)).toBe(true)
-		expect(data.length).toBe(1053)
+		expect(data.length).toBe(count)
 	})
 
 	test('slugs.txt exists and has correct count', () => {
 		const filePath = join(dataDir, 'slugs.txt')
 		expect(existsSync(filePath)).toBe(true)
 		const lines = readFileSync(filePath, 'utf-8').trim().split('\n')
-		expect(lines.length).toBe(1053)
+		expect(lines.length).toBe(count)
 	})
 
 	test('slugs.csv exists and has correct count (header + data)', () => {
@@ -84,7 +241,7 @@ describe('generated data files', () => {
 		expect(existsSync(filePath)).toBe(true)
 		const lines = readFileSync(filePath, 'utf-8').trim().split('\n')
 		expect(lines[0]).toBe('slug')
-		expect(lines.length).toBe(1054) // header + 1053 entries
+		expect(lines.length).toBe(count + 1)
 	})
 
 	test('slugs.yml exists and has correct count', () => {
@@ -93,7 +250,7 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/^ {2}- /gm)
 		expect(entries).not.toBeNull()
-		expect(entries?.length).toBe(1053)
+		expect(entries?.length).toBe(count)
 	})
 
 	test('slugs.xml exists and has correct count', () => {
@@ -102,7 +259,7 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/<slug>/g)
 		expect(entries).not.toBeNull()
-		expect(entries?.length).toBe(1053)
+		expect(entries?.length).toBe(count)
 	})
 
 	test('slugs.toml exists and has correct count', () => {
@@ -111,6 +268,37 @@ describe('generated data files', () => {
 		const content = readFileSync(filePath, 'utf-8')
 		const entries = content.match(/^ {2}"/gm)
 		expect(entries).not.toBeNull()
-		expect(entries?.length).toBe(1053)
+		expect(entries?.length).toBe(count)
 	})
+})
+
+describe('generated category data files', () => {
+	const categoriesDir = join(import.meta.dir, '..', 'data', 'categories')
+
+	const categoryFiles = [
+		['api-developer', apiDeveloperSlugs],
+		['app-routes', appRouteSlugs],
+		['auth', authSlugs],
+		['country-codes', countryCodeSlugs],
+		['dns-mail', dnsMailSlugs],
+		['ecommerce', ecommerceSlugs],
+		['health-monitoring', healthMonitoringSlugs],
+		['impersonation', impersonationSlugs],
+		['infrastructure', infrastructureSlugs],
+		['languages', languageSlugs],
+		['legal', legalSlugs],
+		['protocol-tech', protocolTechSlugs],
+		['saas', saasSlugs],
+		['seo-marketing', seoMarketingSlugs],
+		['social', socialSlugs]
+	] as const
+
+	for (const [name, slugs] of categoryFiles) {
+		test(`${name}.json exists and has correct count`, () => {
+			const filePath = join(categoriesDir, `${name}.json`)
+			expect(existsSync(filePath)).toBe(true)
+			const data = JSON.parse(readFileSync(filePath, 'utf-8'))
+			expect(data.length).toBe(slugs.length)
+		})
+	}
 })

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>ajax</slug>
+  <slug>android</slug>
+  <slug>apple</slug>
+  <slug>atom</slug>
+  <slug>css</slug>
+  <slug>flash</slug>
+  <slug>html</slug>
+  <slug>http</slug>
+  <slug>https</slug>
+  <slug>ipad</slug>
+  <slug>iphone</slug>
+  <slug>irc</slug>
+  <slug>java</slug>
+  <slug>javascript</slug>
+  <slug>js</slug>
+  <slug>json</slug>
+  <slug>linux</slug>
+  <slug>mac</slug>
+  <slug>mp3</slug>
+  <slug>pda</slug>
+  <slug>perl</slug>
+  <slug>php</slug>
+  <slug>python</slug>
+  <slug>rss</slug>
+  <slug>ruby</slug>
+  <slug>smartphone</slug>
+  <slug>sql</slug>
+  <slug>swf</slug>
+  <slug>tablet</slug>
+  <slug>tablets</slug>
+  <slug>tux</slug>
+  <slug>websocket</slug>
+  <slug>windows</slug>
+  <slug>xfn</slug>
+  <slug>xml</slug>
+  <slug>xmpp</slug>
+  <slug>xmppsuggest</slug>
+  <slug>yaml</slug>
+  <slug>yml</slug>
+</slugs>

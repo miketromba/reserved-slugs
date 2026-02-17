@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slugs>
+  <slug>api</slug>
+  <slug>bug</slug>
+  <slug>cli</slug>
+  <slug>code</slug>
+  <slug>codereview</slug>
+  <slug>debug</slug>
+  <slug>dev</slug>
+  <slug>devel</slug>
+  <slug>developer</slug>
+  <slug>developers</slug>
+  <slug>doc</slug>
+  <slug>docs</slug>
+  <slug>documentation</slug>
+  <slug>gist</slug>
+  <slug>git</slug>
+  <slug>github</slug>
+  <slug>graph</slug>
+  <slug>graphql</slug>
+  <slug>grpc</slug>
+  <slug>oembed</slug>
+  <slug>openapi</slug>
+  <slug>playground</slug>
+  <slug>readme</slug>
+  <slug>redoc</slug>
+  <slug>release</slug>
+  <slug>repo</slug>
+  <slug>repositories</slug>
+  <slug>repository</slug>
+  <slug>rest</slug>
+  <slug>sandbox</slug>
+  <slug>sdk</slug>
+  <slug>spec</slug>
+  <slug>swagger</slug>
+  <slug>v1</slug>
+  <slug>v2</slug>
+  <slug>v3</slug>
+  <slug>v4</slug>
+  <slug>version</slug>
+  <slug>webhook</slug>
+  <slug>webhooks</slug>
+</slugs>
