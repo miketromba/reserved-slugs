@@ -12,13 +12,14 @@
 
 Add new entries to the appropriate `src/categories/*.ts` file, keeping entries lowercase and alphabetically sorted.
 
-## Publishing
+## Shipping
 
-Automated via GitHub Actions + Trusted Publishing (no npm token needed).
+When the user says "ship", that means: **push to remote AND publish to npm**. Do both.
 
-```bash
-npm version patch # or minor / major
-git push && git push --tags
-```
+1. `git push` — push commits to the remote
+2. `npm version patch` (or `minor` / `major` as appropriate) — bumps version and creates a tag
+3. `git push && git push --tags` — pushes the version commit and tag
 
 The `v*` tag triggers `.github/workflows/publish.yml` which lints, builds, tests, publishes to npm with provenance, and creates a GitHub Release.
+
+**Never skip the push + version + tag steps when asked to ship.**
